@@ -32,7 +32,7 @@
         <textarea id="main_text" rows="20" cols="70" placeholder="Enter prompt:" class="box"></textarea>
     </div>
     <div class="content2">
-        <button class="divitem" id="submit" onclick="const url = 'https://api.openai.com/v1/completions';const headers = {'Content-Type': 'application/json', Authorization: 'Bearer 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',};const body = {model: 'text-davinci-003', prompt: document.getElementById('main_text').value, temperature: 0.5, max_tokens: 100,};fetch(url, {method: 'POST', headers: headers, body: JSON.stringify(body),}).then((response) => response.json()).then((data) => {console.log(data['choices'][0]['text']);document.getElementById('result').innerHTML=data['choices'][0]['text']});">Submit</button>
+        <button class="divitem" id="submit" onclick="const url = '142.188.100.40';const headers = {'Content-Type': 'application/json', Authorization: 'ye yee',};const body = {model: 'text-davinci-003', prompt: document.getElementById('main_text').value, temperature: 0.5, max_tokens: 100,};fetch(url, {method: 'POST', headers: headers, body: JSON.stringify(body),}).then((response) => response.json()).then((data) => {console.log(data['choices'][0]['text']);document.getElementById('result').innerHTML=data['choices'][0]['text']});">Submit</button>
         <button class="divitem" onclick="toggleDarkMode()">toggle d/l</button>
     </div>
     <div class="content2">
