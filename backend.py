@@ -34,13 +34,8 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-import ipaddress,socket
-
-# Get the first available network interface
-interface = ipaddress.ip_interface(ipaddress.ip_network(socket.gethostname()))
-
-# Get the IP address of the interface
-ip_address = interface.ip
+import socket
+ip_address=socket.gethostbyname(socket.gethostname())
 
 print(f'hosting on {ip_address} on port 5999')
 
