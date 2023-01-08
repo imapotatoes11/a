@@ -1,0 +1,22 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "a",
+  "main": "_1.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imapotatoes11/a.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imapotatoes11/a/issues"
+  },
+  "homepage": "https://github.com/imapotatoes11/a#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}

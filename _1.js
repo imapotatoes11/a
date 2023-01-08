@@ -35,7 +35,7 @@ function httpGet(url){
 }
 async function makeGetRequest(url){
     try{
-        const response = await fetch(url);
+        const response = await fetch(url,{mode: 'no-cors',method: 'GET'});
         const text=await response.json();
         console.log(text);
         return text;
