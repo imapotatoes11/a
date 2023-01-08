@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/imapotatoes11/a#readme",
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "openai": "^3.1.0"
   }
 }

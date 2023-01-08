@@ -8,6 +8,7 @@ function toggleDarkMode(){
             elems[i].style.backgroundColor = 'var(--secondary-color-dark)';
             elems[i].style.color = 'var(--text-color-light)';
         }
+        document.body.style.color='var(--text-color-light)';
     }
     else{
         document.body.classList.add('dark');
@@ -18,47 +19,11 @@ function toggleDarkMode(){
             elems[i].style.backgroundColor = 'var(--secondary-color)';
             elems[i].style.color = 'var(--text-color-dark)';
         }
+        document.body.style.color='var(--text-color-dark)';
     }
 }
 document.addEventListener('DOMContentLoaded', ()=>{toggleDarkMode();});
 
 
 
-function httpGet(url){
-    return new Promise((resolve, reject)=>{
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
-        xhr.onload = ()=>resolve(xhr.responseText);
-        xhr.onerror = ()=>reject(xhr.statusText);
-        xhr.send();
-    });
-}
-// make a http get request to the url
-// and return the response as a string
-function makeGetRequest(url){
-    return new Promise((resolve, reject)=>{
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
-        xhr.onload = ()=>resolve(xhr.responseText);
-        xhr.onerror = ()=>reject(xhr.statusText);
-        xhr.send();
-    });
-}
-/*async function makeGetRequest(url){
-    try{
-        const response = await fetch(url,{mode: 'no-cors',method: 'GET'});
-        const text=await response.json();
-        console.log(text);
-        return text;
-    } catch (error){
-        console.log(error);
-    }
-}*/
-function _makeGetRequest(url){
-    /*return makeGetRequest(url).then((text)=>{
-        return text;
-    });*/
-    return httpGet(url).then((text)=>{
-        return text;
-    })
-}
+//const asdfjkl=()=>{const url = 'https://api.openai.com/v1/completions';const headers = {'Content-Type': 'application/json', Authorization: 'Bearer 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',};const body = {model: 'text-davinci-003', prompt: 'Say this is a test', temperature: 0.5, max_tokens: 100,};fetch(url, {method: 'POST', headers: headers, body: JSON.stringify(body),}).then((response) => response.json()).then((data) => console.log(data['choices'][0]['text']));}

@@ -14,7 +14,9 @@
 textarea{
     font-family:Helvetica,sans-serif;
     border-radius:.5em;
-    padding:.5em;
+    padding:.75em;
+    margin:1em;
+    font-size:16px;
 }
 button{
     background-color:var(--accent-color);
@@ -35,4 +37,20 @@ button{
 }
 button:hover{
     background-color:#1a7f64;
+}
+
+.content1{
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+.content2{
+    justify-content:center;
+    align-items:center;
+    width:100%;
+
+    display:flex;
+}
+.divitem{
+    margin:1em;
 }
