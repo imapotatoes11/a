@@ -10,8 +10,19 @@
 <!--input field-->
 <!--<input type="text" id="input" placeholder="Enter prompt:">-->
 <div class="content1">
+    <script>
+        function httpGET(url){
+            return new Promise((resolve, reject)=>{
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', url);
+                xhr.onload = ()=>resolve(xhr.responseText);
+                xhr.onerror = ()=>reject(xhr.statusText);
+                xhr.send();
+            });
+        }
+    </script>
     <textarea id="main_text" rows="10" cols="50" placeholder="Enter prompt:" class="box"></textarea>
-    <button onclick="httpGet('https://google.ca').then((t)=>{console.log(t);document.getElementById('result').innerHTML=t;})" id="submit">fadslkfjsdalf</button>
+    <button onclick="httpGET('https://google.ca').then((t)=>{console.log(t);document.getElementById('result').innerHTML=t;})" id="submit">fadslkfjsdalf</button>
     <button onclick="toggleDarkMode()">toggle d/l</button>
 </div>
 </body>
