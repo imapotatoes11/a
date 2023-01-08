@@ -22,6 +22,17 @@ function toggleDarkMode(){
 }
 document.addEventListener('DOMContentLoaded', ()=>{toggleDarkMode();});
 
+
+
+function httpGet(url){
+    return new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.onload = ()=>resolve(xhr.responseText);
+        xhr.onerror = ()=>reject(xhr.statusText);
+        xhr.send();
+    });
+}
 async function makeGetRequest(url){
     try{
         const response = await fetch(url);
@@ -33,7 +44,10 @@ async function makeGetRequest(url){
     }
 }
 function _makeGetRequest(url){
-    return makeGetRequest(url).then((text)=>{
+    /*return makeGetRequest(url).then((text)=>{
         return text;
-    });
+    });*/
+    return httpGet(url).then((text)=>{
+        return text;
+    })
 }
