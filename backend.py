@@ -6,7 +6,7 @@ def retrieve(prompt:str):
     url = 'https://api.openai.com/v1/completions'
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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'
+        'Authorization': 'Bearer {TOKEN}'
     }
     body = {
         'model': 'text-davinci-003',
@@ -32,7 +32,9 @@ class RequestHandler(BaseHTTPRequestHandler):
         # Send a response
         self.send_response(200)
         self.end_headers()
-        self.wfile.write(body)
+
+        rr=retrieve(body.decode('utf-8'))
+        self.wfile.write(rr.encode('utf-8'))
 
 import socket
 ip_address=socket.gethostbyname(socket.gethostname())
