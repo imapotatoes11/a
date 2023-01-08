@@ -34,13 +34,15 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-import ipaddress
+import ipaddress,socket
 
 # Get the first available network interface
 interface = ipaddress.ip_interface(ipaddress.ip_network(socket.gethostname()))
 
 # Get the IP address of the interface
 ip_address = interface.ip
+
+print(f'hosting on {ip_address} on port 5999')
 
 httpd = HTTPServer((ip_address, 5999), RequestHandler)
 httpd.serve_forever()
