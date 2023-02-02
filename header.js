@@ -25,7 +25,7 @@ class NavBar extends React.Component {
         return (
             <NavBar>
                 <h1>Header (hopefully this works)</h1>
-                <h2>dasflkajdskfljdsaklfjdasklfjkldasjkfldsakfjadkslf</h2>
+                <h2>dasflkajdskfljdsaklfjdasklfjkldasjkfldsadsfjalsfjklasdakfjadkslf</h2>
                 <script type="text/javascript">alert("daklfjadsklfjdsaklfj")</script>
             </NavBar>
         );
