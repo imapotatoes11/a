@@ -8,6 +8,12 @@ function toggleDarkMode(){
             elems[i].style.backgroundColor = 'var(--secondary-color-dark)';
             elems[i].style.color = 'var(--text-color-light)';
         }
+        document.getElementById("nav-menu-content-inner").style.backgroundColor = 'var(--secondary-color-dark)';
+        let nav_items=document.getElementById("nav-menu-content-inner").children;
+        for (let i=0;i<nav_items.length;i+=1){
+            nav_items[i].style.color = 'var(--text-color-light)';
+            nav_items[i].style.backgroundColor = 'var(--tertiary-color-dark)';
+        }
         document.body.style.color='var(--text-color-light)';
     }
     else{
@@ -18,6 +24,12 @@ function toggleDarkMode(){
         for (let i=0;i<elems.length;i+=1){
             elems[i].style.backgroundColor = 'var(--secondary-color)';
             elems[i].style.color = 'var(--text-color-dark)';
+        }
+        document.getElementById("nav-menu-content-inner").style.backgroundColor = 'var(--secondary-color)';
+        let nav_items=document.getElementById("nav-menu-content-inner").children;
+        for (let i=0;i<nav_items.length;i+=1){
+            nav_items[i].style.color = 'var(--text-color-dark)';
+            nav_items[i].style.backgroundColor = 'var(--tertiary-color)';
         }
         document.body.style.color='var(--text-color-dark)';
     }

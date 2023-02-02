@@ -2,7 +2,7 @@
   "name": "a",
   "version": "1.0.0",
   "description": "a",
-  "main": "_1.js",
+  "main": "ldm.js",
   "scripts": {
     "test": "test"
   },
