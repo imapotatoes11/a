@@ -23,11 +23,11 @@ class NavBar extends React.Component {
     }
     render(){
         return (
-            <div>
+            <NavBar>
                 <h1>Header (hopefully this works)</h1>
                 <h2>dasflkajdskfljdsaklfjdasklfjkldasjkfldsakfjadkslf</h2>
                 <script type="text/javascript">alert("daklfjadsklfjdsaklfj")</script>
-            </div>
+            </NavBar>
         );
     }
 }
@@ -36,3 +36,4 @@ alert("i dont like react nothings working THIS ISNT EVEN BEING CALLED")
 const domContainer = document.querySelector('#react-domain-alpha');
 const root = ReactDOM.createRoot(domContainer);
 root.render(e(NavBar));
+alert("AKLSFJLKDFJAKLJFKLSJAKLFJSKALJFKLSJALF")
