@@ -50,7 +50,7 @@ class Files extends React.Component {
     }
 }
 
-console.log('[DEBUG] update v0.0.1-3')
+console.log('[DEBUG] update v0.0.1-5')
 const domContainer = document.querySelector('#react-domain-beta');
 const root = ReactDOM.createRoot(domContainer);
 root.render(React.createElement(Files));
