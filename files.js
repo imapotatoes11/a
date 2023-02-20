@@ -25,7 +25,7 @@ class Files extends React.Component {
         //         console.log(this.files);
         //     })
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '142.198.226.37:6010', true);
+        xhr.open('GET', 'https://142.198.226.37:6010', true);
         xhr.setRequestHeader('Content-Type', 'application/json')
         xhr.setRequestHeader('command', 'list');
         xhr.onload = function () {
