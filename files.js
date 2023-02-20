@@ -25,7 +25,7 @@ class Files extends React.Component {
         //         console.log(this.files);
         //     })
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://142.198.226.37:6010', true);
+        xhr.open('GET', '142.198.226.37:6010', true);
         xhr.setRequestHeader('Content-Type', 'application/json')
         xhr.setRequestHeader('command', 'list');
         xhr.onload = function () {
@@ -50,7 +50,7 @@ class Files extends React.Component {
     }
 }
 
-console.log('[DEBUG] update v0.0.1-5')
+console.log('[DEBUG] update v0.0.1-6')
 const domContainer = document.querySelector('#react-domain-beta');
 const root = ReactDOM.createRoot(domContainer);
 root.render(React.createElement(Files));
