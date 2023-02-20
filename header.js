@@ -21,6 +21,7 @@ class NavBar extends React.Component {
                         <div id="nav-menu-content-inner">
                             <a href="home.html" className="underline">Home</a>
                             <a href="index.html" className="underline">A</a>
+                            <a href="files.html" className="underline">Files</a>
                             <a href="https://kkevin.me/vigilant-telegram" className="underline">vigilant-telegram</a>
                             <a href="https://rickrollredirect.github.io" className="underline">glowing-pancake</a>
                         </div>

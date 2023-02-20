@@ -1,0 +1,10 @@
+ul > li > a{
+    color: #5a5abb;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0.3s ease-out;
+}
+ul > li > a:hover{
+    color: #fff;
+    background: #000;
+}
